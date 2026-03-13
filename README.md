@@ -47,19 +47,28 @@ Mailbox databases are replicated between EXMBX01 and EXMBX02 to provide automati
 
 ###### 1. Prepare Active Directory 
 **Schema Update**:Command Prompt as Administrator on a domain controller
+- Extends the Active Directory schema by adding new classes and attributes required for Microsoft Exchange Server 2019.
 
 ```
 Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareSchema
 ```
 
 **Prepare AD**:Command Prompt as Administrator on a domain controller
+- Creates Exchange organization objects, security groups, and required permissions inside Active Directory.
+
 ```
 Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAD
 ```
 
 **Prepare Domains**:Command Prompt as Administrator on a domain controller
+- Configures Exchange permissions across all domains in the forest to ensure proper access for Exchange servers.
+
 ```
 E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAllDomains
 ```
+
+📌 Note for Documentation:
+
+These commands were executed on a single Domain Controller with appropriate administrative privileges. Changes were then replicated automatically to all other Domain Controllers through Active Directory replication
 
 ###### 2. Install Exchange Prerequisites

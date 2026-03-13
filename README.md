@@ -44,3 +44,22 @@ Mailbox databases are replicated between EXMBX01 and EXMBX02 to provide automati
 7. Configure Database Replication
 
 ----------------------------------------------------------------------
+
+###### 1. Prepare Active Directory 
+**Schema Update**:Command Prompt as Administrator on a domain controller
+
+```
+Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareSchema
+```
+
+**Prepare AD**:Command Prompt as Administrator on a domain controller
+```
+Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAD
+```
+
+**Prepare Domains**:Command Prompt as Administrator on a domain controller
+```
+E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAllDomains
+```
+
+###### 2. Install Exchange Prerequisites

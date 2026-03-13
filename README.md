@@ -46,6 +46,12 @@ Mailbox databases are replicated between EXMBX01 and EXMBX02 to provide automati
 ----------------------------------------------------------------------
 
 ###### 1. Prepare Active Directory 
+**Before running the Exchange forest preparation commands, a user account with the following privileges is required:**
+**-Domain Admins**
+**-Enterprise Admins**
+**-Schema Admins**
+<img width="1617" height="855" alt="image" src="https://github.com/user-attachments/assets/9f8a6c6f-3374-4d90-9d99-ca2638ea39a7" />
+
 **Schema Update**:Command Prompt as Administrator on a domain controller
 - Extends the Active Directory schema by adding new classes and attributes required for Microsoft Exchange Server 2019.
 

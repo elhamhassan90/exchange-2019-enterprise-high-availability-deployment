@@ -45,11 +45,11 @@ Mailbox databases are replicated between EXMBX01 and EXMBX02 to provide automati
 
 ----------------------------------------------------------------------
 
-###### 1. Prepare Active Directory 
-**Before running the Exchange forest preparation commands, a user account with the following privileges is required:**
-**-Domain Admins**
-**-Enterprise Admins**
-**-Schema Admins**
+### 1. Prepare Active Directory 
+#####  **Before running the Exchange forest preparation commands, a user account with the following privileges is required:**
+##### **-Domain Admins**
+##### **-Enterprise Admins**
+##### **-Schema Admins**
 <img width="1617" height="855" alt="image" src="https://github.com/user-attachments/assets/9f8a6c6f-3374-4d90-9d99-ca2638ea39a7" />
 
 **Schema Update**:Command Prompt as Administrator on a domain controller
@@ -77,4 +77,4 @@ E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAllDom
 
 These commands were executed on a single Domain Controller with appropriate administrative privileges. Changes were then replicated automatically to all other Domain Controllers through Active Directory replication
 
-###### 2. Install Exchange Prerequisites
+### 2. Install Exchange Prerequisites

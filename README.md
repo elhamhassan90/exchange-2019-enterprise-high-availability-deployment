@@ -75,7 +75,8 @@ E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAllDom
 ```
 
 📌 Note for Documentation:
-
-These commands were executed on a single Domain Controller with appropriate administrative privileges. Changes were then replicated automatically to all other Domain Controllers through Active Directory replication
+The Exchange forest preparation commands must be executed from a domain-joined server where the Exchange installation ISO is mounted, since Setup.exe is required from the installation media path.
+It is recommended to run these commands from the server where Exchange will be installed, using the mounted ISO (e.g., E:).
+After completion, Active Directory replication will automatically synchronize the changes across all Domain Controllers.
 
 ### 2. Install Exchange Prerequisites

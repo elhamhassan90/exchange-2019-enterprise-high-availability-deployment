@@ -11,12 +11,12 @@ The design includes Client Access services and Database Availability Group (DAG)
 
 ## Virtual Machine Specifications
 
-| VM Name  | Role            | OS                      | RAM | Disk | IP Address   |
-|----------|-----------------|-------------------------|-----|------|--------------|
-| DC01     | Domain Controller | Windows Server 2019   | 2GB | 40GB | 192.168.1.10 |
-| EXCAS01  | Exchange CAS    | Windows Server 2019     | 3GB | 60GB | 192.168.1.20 |
-| EXMBX01  | Mailbox + DAG   | Windows Server 2019     | 5GB |120GB | 192.168.1.30 |
-| EXMBX02  | Mailbox + DAG   | Windows Server 2019     | 5GB |120GB | 192.168.1.31 |
+| VM Name  | Role            | OS                      | RAM | Disk |   IP Address   |
+|----------|-----------------|-------------------------|-----|------|----------------|
+| DC01     | Domain Controller | Windows Server 2019   | 2GB | 40GB | 192.168.100.10 |
+| EXCAS01  | Exchange CAS    | Windows Server 2019     | 3GB | 60GB | 192.168.100.21 |
+| EXMBX01  | Mailbox + DAG   | Windows Server 2019     | 5GB |120GB | 192.168.100.30 |
+| EXMBX02  | Mailbox + DAG   | Windows Server 2019     | 5GB |120GB | 192.168.100.31 |
 
 ## Technologies Used
 

@@ -102,7 +102,7 @@ Before installing Microsoft Exchange Server 2019, the following prerequisite sof
   https://www.microsoft.com/en-us/download/details.aspx?id=30679
 
 - **Unified Communications Managed API 4.0**  
-  https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10
+  https://www.microsoft.com/en-us/download/details.aspx?id=34992
 
 - **IIS URL Rewrite Module**  
   https://www.iis.net/downloads/microsoft/url-rewrite

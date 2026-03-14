@@ -57,25 +57,28 @@ Mailbox databases are replicated between EXMBX01 and EXMBX02 to provide automati
 - Extends the Active Directory schema by adding new classes and attributes required for Microsoft Exchange Server 2019.
 
 ```
-Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareSchema
+D:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareSchema
 ```
+image3
+
 
 **Prepare AD**:Command Prompt as Administrator on a domain controller
 - Creates Exchange organization objects, security groups, and required permissions inside Active Directory.
 
 ```
-Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAD
+D:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAD
 ```
 
 **Prepare Domains**:Command Prompt as Administrator on a domain controller
 - Configures Exchange permissions across all domains in the forest to ensure proper access for Exchange servers.
 
 ```
-E:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAllDomains
+D:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAllDomains
 ```
 
 📌 Note for Documentation:
-The Exchange forest preparation commands must be executed from a domain-joined server where the Exchange installation ISO is mounted, since Setup.exe is required from the installation media path.
+> [!NOTE]
+> The Exchange forest preparation commands must be executed from a domain-joined server where the Exchange installation ISO is mounted, since Setup.exe is required from the installation media path.
 It is recommended to run these commands from the server where Exchange will be installed, using the mounted ISO (e.g., E:).
 After completion, Active Directory replication will automatically synchronize the changes across all Domain Controllers.
 
@@ -104,5 +107,7 @@ Before installing Microsoft Exchange Server 2019, the following prerequisite sof
 - **IIS URL Rewrite Module**  
   https://www.iis.net/downloads/microsoft/url-rewrite
 
-  
+  image2
+> [!IMPORTANT]
+> You should restart server after finishing installation of required software
 -----------------------------------------

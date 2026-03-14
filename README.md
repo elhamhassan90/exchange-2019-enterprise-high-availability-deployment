@@ -87,6 +87,8 @@ Install-WindowsFeature Server-Media-Foundation, NET-Framework-45-Features, RPC-o
 <img width="1622" height="611" alt="image" src="https://github.com/user-attachments/assets/2a2e0fba-3ea7-4f49-95dd-f07f37cad281" />
 
 
+
+
 #### 2) Install Required Software:
 Before installing Microsoft Exchange Server 2019, the following prerequisite software packages must be installed on the Exchange Server.
 
@@ -103,3 +105,4 @@ Before installing Microsoft Exchange Server 2019, the following prerequisite sof
   https://www.iis.net/downloads/microsoft/url-rewrite
 
   
+-----------------------------------------

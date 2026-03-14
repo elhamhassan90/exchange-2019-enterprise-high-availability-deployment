@@ -75,8 +75,8 @@ D:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAD
 ```
 D:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAllDomains
 ```
-
-📌 Note for Documentation:
+image4
+📌
 > [!NOTE]
 > The Exchange forest preparation commands must be executed from a domain-joined server where the Exchange installation ISO is mounted, since Setup.exe is required from the installation media path.
 It is recommended to run these commands from the server where Exchange will be installed, using the mounted ISO (e.g., E:).

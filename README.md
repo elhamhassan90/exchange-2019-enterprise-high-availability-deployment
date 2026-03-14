@@ -80,25 +80,26 @@ It is recommended to run these commands from the server where Exchange will be i
 After completion, Active Directory replication will automatically synchronize the changes across all Domain Controllers.
 
 ### 1. Install Exchange Prerequisites
-- Install Required Roles and Features: Powershell as Administrator 
+#### 1) Install Required Roles and Features: Powershell as Administrator 
 ```
 Install-WindowsFeature Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
 ```
 <img width="1622" height="611" alt="image" src="https://github.com/user-attachments/assets/2a2e0fba-3ea7-4f49-95dd-f07f37cad281" />
 
-- Install Required Software:
 
-.NET Framework 4.8(offline) 
+#### 2) Install Required Software:
+Before installing Microsoft Exchange Server 2019, the following prerequisite software packages must be installed on the Exchange Server.
 
-https://support.microsoft.com/en-us/topic/microsoft-net-framework-4-8-offline-installer-for-windows-9d23f658-3b97-68ab-d013-aa3c3e7495e0
+- **.NET Framework 4.8 (Offline Installer)**  
+  https://support.microsoft.com/en-us/topic/microsoft-net-framework-4-8-offline-installer-for-windows-9d23f658-3b97-68ab-d013-aa3c3e7495e0
 
-Visual C++ Redistributable Packages for Visual Studio 2013
+- **Visual C++ Redistributable Packages for Visual Studio 2013**  
+  https://www.microsoft.com/en-us/download/details.aspx?id=30679
 
-https://www.microsoft.com/en-us/download/details.aspx?id=30679
+- **Unified Communications Managed API 4.0**  
+  https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10
 
-Unified Communications Managed API 4.0
+- **IIS URL Rewrite Module**  
+  https://www.iis.net/downloads/microsoft/url-rewrite
 
-https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-redistributable-package-d8ccd6a5-4e26-c290-517b-8da6cfdf4f10
-
-Url-rewrite
-https://www.iis.net/downloads/microsoft/url-rewrite
+  

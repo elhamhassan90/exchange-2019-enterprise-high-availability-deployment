@@ -82,7 +82,7 @@ image4
 It is recommended to run these commands from the server where Exchange will be installed, using the mounted ISO (e.g., E:).
 After completion, Active Directory replication will automatically synchronize the changes across all Domain Controllers.
 
-### 1. Install Exchange Prerequisites
+### 2. Install Exchange Prerequisites
 #### 1) Install Required Roles and Features: Powershell as Administrator 
 ```
 Install-WindowsFeature Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
@@ -107,7 +107,16 @@ Before installing Microsoft Exchange Server 2019, the following prerequisite sof
 - **IIS URL Rewrite Module**  
   https://www.iis.net/downloads/microsoft/url-rewrite
 
-  image2
+  image2, image5
 > [!IMPORTANT]
 > You should restart server after finishing installation of required software
 -----------------------------------------
+
+### 3. Install Exchange Server 2019
+Mount the Exchange 2019 ISO
+Run Setup:Command Prompt as Administrator and navigate to the mounted ISO directory
+D:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /mode:Install /r:MB
+
+image6
+
+-----------------------------------------------------------------

@@ -61,6 +61,7 @@ D:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareSchema
 ```
 image3
 
+<img width="1417" height="787" alt="3" src="https://github.com/user-attachments/assets/0fe78309-1710-4b2a-a200-39a6dc0ebfea" />
 
 **Prepare AD**:Command Prompt as Administrator on a domain controller
 - Creates Exchange organization objects, security groups, and required permissions inside Active Directory.
@@ -76,6 +77,8 @@ D:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAD
 D:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareAllDomains
 ```
 image4
+<img width="1442" height="920" alt="4" src="https://github.com/user-attachments/assets/79c622e1-8b0a-4f13-8016-e58fe3a1def0" />
+
 📌
 > [!NOTE]
 > The Exchange forest preparation commands must be executed from a domain-joined server where the Exchange installation ISO is mounted, since Setup.exe is required from the installation media path.
@@ -108,6 +111,11 @@ Before installing Microsoft Exchange Server 2019, the following prerequisite sof
   https://www.iis.net/downloads/microsoft/url-rewrite
 
   image2, image5
+<img width="1362" height="713" alt="2" src="https://github.com/user-attachments/assets/b7519f56-6002-4bf9-a4a6-f9d013d14fc6" />
+
+<img width="1338" height="807" alt="5" src="https://github.com/user-attachments/assets/fd3ae37f-626c-4f81-b423-d73101103768" />
+
+  
 > [!IMPORTANT]
 > You should restart server after finishing installation of required software
 -----------------------------------------
